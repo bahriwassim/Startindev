@@ -1,0 +1,75 @@
+Cahier des charges - Création du site web Start In Dev Group
+
+1. Objectif du site Le site Start In Dev Group a pour objectif de présenter l’activité de la structure, ses trois business units, ses réalisations et son positionnement. Il doit permettre aux visiteurs de comprendre l’offre globale, d’identifier les services qui les concernent, et de faciliter la prise de contact.
+
+2. Périmètre fonctionnel
+Site vitrine responsive (desktop / mobile)
+Navigation fluide entre les business units
+Intégration de formulaire de contact
+Intégration de lien vers le LinkedIn du fondateur + QR code
+Intégration possible d’un module de prise de rendez-vous (Calendly)
+Galerie visuelle (photos / vidéos)
+Intégration d’un blog (optionnel mais prévu)
+
+3. Arborescence du site & Contenu à intégrer
+Page d’accueil Objectif : poser le positionnement et orienter vers les BU.
+Accroche : "Votre partenaire digital 360° pour l’hôtellerie"
+Bref paragraphe de présentation :
+Start In Dev Group accompagne les hôtels et groupes hôteliers dans leur développement digital, en combinant expertise stratégique, création de contenu et solutions techniques. Grâce à une approche à 360°, nous intervenons aussi bien en conseil qu’en production ou en exécution.
+Aperçu des trois BU avec boutons “Découvrir”
+Appel à action : "Demandez un audit express gratuit" ou "Contactez-nous"
+Page À propos Objectif : légitimer la structure et expliquer son ADN.
+Historique :
+Start In Dev est né de plusieurs années de missions menées au sein d’un grand groupe hôtelier international. Face à la complexité croissante des enjeux digitaux dans l’hôtellerie, nous avons structuré notre expertise autour de 3 pôles complémentaires.
+Vision :
+Notre conviction : un digital utile, accessible et activable, pensé pour les réalités du terrain hôtelier.
+Pourquoi “Group” : pour rassembler des compétences distinctes au service d’un même objectif : la performance digitale des hôtels.
+Page Consulting Objectif : détailler l’offre de conseil et d’intervention opérationnelle.
+Accroche : "Renforcez votre structure digitale avec des experts métiers"
+Texte long :
+Start In Dev Consulting accompagne les hôtels et groupes hôteliers dans leurs projets digitaux avec une approche sur mesure et opérationnelle. Nous mettons à disposition des consultants spécialisés qui peuvent intervenir en renfort d’équipes internes, en pilotage de projet, ou en mission d’expertise stratégique. Notre force repose sur notre connaissance des standards hôteliers et notre expérience terrain.
+Nous accompagnons également la mise en place de leviers business via le web : amélioration de la visibilité sur les OTAs, campagnes de sponsoring, optimisation du référencement, performance du site direct. Que vous soyez un hôtel indépendant ou un groupe structuré, nous adaptons notre méthodologie à votre environnement et à vos objectifs.
+Notre mission : vous apporter de la clarté, de l’efficacité et des résultats.
+Liste des services :
+Conseil stratégique digital
+Renfort d’équipe et accompagnement sur site
+Audit de performance OTA / contenu
+Mise en place de sponsoring & campagnes de visibilité
+Formation aux outils et leviers digitaux
+Page Studio Objectif : montrer l’offre de contenu visuel professionnel orienté conversion.
+Accroche : "Des visuels pensés pour générer de la réservation"
+Texte long :
+Start In Dev Studio produit des contenus visuels adaptés aux attentes des voyageurs et aux exigences des plateformes de distribution. Notre approche ne se limite pas à la production : nous assurons une direction artistique complète sur chaque projet.
+Nous réalisons des shootings photo professionnels, des vidéos immersives, du contenu drone ou des formats courts pour les réseaux sociaux et OTAs. Nous adaptons chaque projet aux guidelines du groupe ou de l’établissement. Nous pouvons également gérer l’intégration des visuels dans les plateformes (All.com, Booking, etc.) et proposons un accompagnement créatif pour mettre en valeur les spécificités de chaque hôtel.
+Résultat : une image cohérente, professionnelle, et au service de la conversion.
+Liste des services :
+Shooting photo professionnel (espaces, chambres, services)
+Vidéos immersives & drone
+Formats courts pour réseaux sociaux & OTAs
+Direction artistique
+Retouche & montage
+Intégration sur plateformes
+Casting figurants (optionnel)
+Page Tech Objectif : valoriser les solutions digitales utiles et concrètes développées pour les hôtels.
+Accroche : "Des outils simples, activables, pensés pour l’hôtellerie"
+Texte long :
+Start In Dev Tech conçoit des solutions digitales utiles et pragmatiques : site vitrine, page de vente, tunnel de conversion, intégration avec les PMS ou outils de gestion hôtelière. Nous nous concentrons sur l’essentiel : livrer rapidement une solution fonctionnelle, claire, adaptée aux attentes clients et aux contraintes techniques de l’hôtel.
+En parallèle, nous développons des projets internes comme Zishop, plateforme de mise en relation entre hôtels et commerces locaux. Ce double positionnement (exécution + innovation) fait de Start In Dev Tech un partenaire agile et capable d’anticiper les usages de demain.
+Liste des services :
+Création de site vitrine / pages dédiées à la conversion
+Intégration PMS / extranet
+Tunnel de réservation / page événement
+Développement de projets internes innovants
+Page Réalisations / Projets
+Présentation de cas concrets anonymisés
+Fiche dédiée à Zishop (coming soon)
+Page Contact
+Formulaire : Nom / Prénom / Email / Objet / Message
+Coordonnées complètes
+QR code LinkedIn, bouton Calendly, email, téléphone
+
+4. Design attendu
+Identité sobre, professionnelle, moderne
+Couleurs : orange / blanc / vert (couleur du logo)
+Éléments visuels : pictos, icônes, espaces bien aérés
+Navigation fluide mobile / desktop
