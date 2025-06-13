@@ -73,8 +73,8 @@ export default function Contact() {
     {
       icon: <Mail className="text-primary" size={24} />,
       title: "Email",
-      content: "contact@startindev-group.com",
-      href: "mailto:contact@startindev-group.com"
+      content: "contact@startindev.com",
+      href: "mailto:contact@startindev.com"
     },
     {
       icon: <Phone className="text-primary" size={24} />,
@@ -86,7 +86,7 @@ export default function Contact() {
       icon: <Linkedin className="text-primary" size={24} />,
       title: "LinkedIn",
       content: "Voir notre profil",
-      href: "#"
+      href: "https://www.linkedin.com/company/start-in-dev-group/?viewAsMember=true"
     }
   ];
 

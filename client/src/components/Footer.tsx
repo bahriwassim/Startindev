@@ -20,13 +20,13 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/start-in-dev-group/?viewAsMember=true" 
                 className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary/80 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:contact@startindev-group.com" 
+                href="mailto:contact@startindev.com" 
                 className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary/80 transition-colors"
               >
                 <Mail size={20} />
@@ -65,7 +65,7 @@ export function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <Mail size={16} className="mr-2" />
-                contact@startindev-group.com
+                contact@startindev.com
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2" />
