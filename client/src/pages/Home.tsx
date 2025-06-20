@@ -23,9 +23,9 @@ export default function Home() {
       title: "Consulting",
       description: "Renforcez votre structure digitale avec des experts métiers qui comprennent les enjeux de l'hôtellerie.",
       features: [
-        "Conseil stratégique digital",
-        "Audit de performance OTA",
-        "Formation aux outils digitaux"
+        "Pilotage de la stratiégie de distubution web",
+        "Audit & optimisation des performances",
+        "Formation & sensibilisation digitale"
       ],
       href: "/consulting",
       colorClass: "bg-primary/10",
@@ -36,9 +36,9 @@ export default function Home() {
       title: "Studio",
       description: "Des visuels pensés pour générer de la réservation avec une direction artistique complète.",
       features: [
-        "Shooting photo professionnel",
-        "Vidéos immersives & drone",
-        "Direction artistique"
+        "Reportage photo & vidéo vitrine",
+        "Contenus pour la communication digitale",
+        "Direction & pilotage des projets audiovisuels"
       ],
       href: "/studio",
       colorClass: "bg-primary/10",
@@ -51,7 +51,7 @@ export default function Home() {
       features: [
         "Sites vitrine & conversion",
         "Intégration PMS / extranet",
-        "Solutions innovantes"
+        " Solutions sur-mesure"
       ],
       href: "/tech",
       colorClass: "bg-primary/10",

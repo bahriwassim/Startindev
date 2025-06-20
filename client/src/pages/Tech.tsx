@@ -12,7 +12,17 @@ import {
   Star,
   Zap,
   Database,
-  ArrowRight
+  ArrowRight,
+  CheckCircle,
+  Clock,
+  Shield,
+  Smartphone,
+  Search,
+  CreditCard,
+  BarChart3,
+  Settings,
+  Wifi,
+  Monitor
 } from "lucide-react";
 
 const sectionVariants = {
@@ -53,34 +63,93 @@ export default function Tech() {
     {
       icon: <Globe className="text-primary" size={24} />,
       title: "Création de site vitrine / pages dédiées à la conversion",
-      description: "Sites web optimisés pour maximiser les réservations directes"
+      description: "Sites web optimisés pour maximiser les réservations directes",
+      details: [
+        "Design responsive adapté à tous les appareils",
+        "Optimisation SEO pour améliorer la visibilité",
+        "Intégration de systèmes de réservation en ligne",
+        "Analyse des parcours utilisateurs et optimisation des conversions",
+        "Gestionnaire de contenu intuitif pour les équipes",
+        "Temps de chargement optimisés pour une meilleure expérience"
+      ]
     },
     {
       icon: <Plug className="text-primary" size={24} />,
       title: "Intégration PMS / extranet",
-      description: "Connexion seamless avec vos systèmes de gestion existants"
+      description: "Connexion seamless avec vos systèmes de gestion existants",
+      details: [
+        "Synchronisation automatique des disponibilités et tarifs",
+        "APIs sécurisées pour l'échange de données",
+        "Intégration avec les principaux PMS du marché (Opera, Protel, Fidelio)",
+        "Gestion centralisée des réservations multi-canaux",
+        "Mise à jour en temps réel des informations",
+        "Support technique dédié pour la configuration"
+      ]
     },
     {
       icon: <ShoppingCart className="text-primary" size={24} />,
       title: "Tunnel de réservation / page événement",
-      description: "Processus de réservation optimisé pour la conversion"
+      description: "Processus de réservation optimisé pour la conversion",
+      details: [
+        "Interface intuitive pour réduire l'abandon de panier",
+        "Paiement sécurisé multi-devises",
+        "Gestion des promotions et codes de réduction",
+        "Options de personnalisation pour les événements spéciaux",
+        "Suivi des performances et analytics détaillés",
+        "Tests A/B pour optimiser les taux de conversion"
+      ]
     },
     {
       icon: <Rocket className="text-primary" size={24} />,
       title: "Développement de projets internes innovants",
-      description: "Solutions propriétaires comme notre plateforme Zishop"
+      description: "Solutions propriétaires comme notre plateforme Zishop",
+      details: [
+        "Développement d'applications métier sur mesure",
+        "Solutions SaaS pour l'hôtellerie",
+        "Plateformes de gestion des services internes",
+        "Outils d'automatisation des processus",
+        "Solutions mobiles pour le personnel",
+        "Innovation continue avec les dernières technologies"
+      ]
     }
   ];
 
   const technologies = [
-    "React & Next.js",
-    "Node.js & Express",
-    "API REST & GraphQL",
-    "Bases de données SQL/NoSQL",
-    "Cloud AWS/Azure",
-    "Intégrations PMS",
-    "Paiements sécurisés",
-    "Analytics & SEO"
+    { name: "React & Next.js", icon: <Code size={16} />, description: "Interfaces modernes et performantes" },
+    { name: "Node.js & Express", icon: <Database size={16} />, description: "Backend robuste et scalable" },
+    { name: "API REST & GraphQL", icon: <Wifi size={16} />, description: "Communication efficace entre services" },
+    { name: "Bases de données SQL/NoSQL", icon: <Database size={16} />, description: "Stockage optimisé des données" },
+    { name: "Cloud AWS/Azure", icon: <Settings size={16} />, description: "Infrastructure cloud sécurisée" },
+    { name: "Intégrations PMS", icon: <Plug size={16} />, description: "Connexions système hôtelier" },
+    { name: "Paiements sécurisés", icon: <CreditCard size={16} />, description: "Stripe, PayPal, solutions bancaires" },
+    { name: "Analytics & SEO", icon: <BarChart3 size={16} />, description: "Suivi performance et référencement" }
+  ];
+
+  const processSteps = [
+    {
+      step: "01",
+      title: "Analyse des besoins",
+      description: "Audit de votre situation actuelle et définition des objectifs",
+      duration: "1-2 semaines"
+    },
+    {
+      step: "02", 
+      title: "Conception technique",
+      description: "Architecture de la solution et maquettage des interfaces",
+      duration: "2-3 semaines"
+    },
+    {
+      step: "03",
+      title: "Développement",
+      description: "Codage, tests et intégration des fonctionnalités",
+      duration: "4-8 semaines"
+    },
+    {
+      step: "04",
+      title: "Déploiement & formation",
+      description: "Mise en production et formation de vos équipes",
+      duration: "1-2 semaines"
+    }
   ];
 
   return (
@@ -135,7 +204,7 @@ export default function Tech() {
         </div>
       </motion.section>
 
-      {/* Services Section */}
+      {/* Detailed Services Section */}
       <motion.section 
         className="py-20 bg-white"
         initial="hidden"
@@ -144,36 +213,156 @@ export default function Tech() {
         variants={sectionVariants}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div className="text-center mb-16" variants={itemVariants}>
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
+              Nos services techniques détaillés
+            </h2>
+            <p className="text-xl text-neutral-medium max-w-3xl mx-auto">
+              Des solutions complètes adaptées aux besoins spécifiques de l'industrie hôtelière
+            </p>
+          </motion.div>
+
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="space-y-16"
             variants={staggerContainer}
           >
-            {[
-              {
-                icon: <Globe size={24} className="text-primary" />,
-                title: "Sites vitrine & conversion",
-                description: "Création de sites web performants et optimisés pour la conversion."
-              },
-              {
-                icon: <Database size={24} className="text-primary" />,
-                title: "Intégration PMS",
-                description: "Connexion avec votre système de gestion hôtelière."
-              },
-              {
-                icon: <Code size={24} className="text-primary" />,
-                title: "Solutions innovantes",
-                description: "Développement de projets internes comme Zishop."
-              }
-            ].map((service, index) => (
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                variants={itemVariants}
+              >
+                <div className={index % 2 === 1 ? "lg:order-2" : ""}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl font-bold text-neutral-dark">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <p className="text-lg text-neutral-medium mb-6">
+                    {service.description}
+                  </p>
+                  <ul className="space-y-3">
+                    {service.details.map((detail, detailIndex) => (
+                      <li key={detailIndex} className="flex items-start gap-3">
+                        <CheckCircle size={20} className="text-primary mt-0.5 flex-shrink-0" />
+                        <span className="text-neutral-dark">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                  <motion.img
+                    src={`https://images.unsplash.com/photo-${
+                      index === 0 ? '1551434678-e076c223a692' : 
+                      index === 1 ? '1460925895917-afdab827c52f' :
+                      index === 2 ? '1556742049-0c4b30e8c0b9' :
+                      '1519389950473-47ba0277781c'
+                    }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600`}
+                    alt={service.title}
+                    className="rounded-xl shadow-xl w-full"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Technologies Section */}
+      <motion.section 
+        className="py-20 bg-neutral-light"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div className="text-center mb-12" variants={itemVariants}>
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
+              Technologies et expertises
+            </h2>
+            <p className="text-xl text-neutral-medium">
+              Notre stack technique pour des solutions performantes et évolutives
+            </p>
+          </motion.div>
+
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            variants={staggerContainer}
+          >
+            {technologies.map((tech, index) => (
               <motion.div
                 key={index}
                 className="p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow"
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
               >
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-neutral-medium">{service.description}</p>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                    {tech.icon}
+                  </div>
+                  <h3 className="font-semibold text-neutral-dark">{tech.name}</h3>
+                </div>
+                <p className="text-sm text-neutral-medium">{tech.description}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Process Section */}
+      <motion.section 
+        className="py-20 bg-white"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div className="text-center mb-16" variants={itemVariants}>
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
+              Notre processus de développement
+            </h2>
+            <p className="text-xl text-neutral-medium max-w-3xl mx-auto">
+              Une méthodologie éprouvée pour garantir la réussite de votre projet
+            </p>
+          </motion.div>
+
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+          >
+            {processSteps.map((step, index) => (
+              <motion.div
+                key={index}
+                className="relative"
+                variants={itemVariants}
+              >
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-white font-bold text-xl mb-4">
+                    {step.step}
+                  </div>
+                  <h3 className="text-xl font-semibold text-neutral-dark mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-neutral-medium mb-3">
+                    {step.description}
+                  </p>
+                  <div className="inline-flex items-center gap-1 text-sm text-primary">
+                    <Clock size={14} />
+                    {step.duration}
+                  </div>
+                </div>
+                {index < processSteps.length - 1 && (
+                  <div className="hidden lg:block absolute top-8 left-full w-full">
+                    <ArrowRight className="text-primary/30 mx-auto" size={24} />
+                  </div>
+                )}
               </motion.div>
             ))}
           </motion.div>
@@ -206,7 +395,9 @@ export default function Tech() {
                   "Développement rapide et efficace",
                   "Solutions sur mesure",
                   "Support technique réactif",
-                  "Formation et documentation"
+                  "Formation et documentation",
+                  "Maintenance et évolutions",
+                  "Sécurité et conformité RGPD"
                 ].map((feature, index) => (
                   <motion.li 
                     key={index}

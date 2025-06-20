@@ -38,12 +38,26 @@ export function BusinessUnitCard({
       title === "Studio" ? "1606857521015-7f9fcf423740" :
       "1498050108023-c5249f4df085"
     }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400`,
-    benefits: [
-      "ROI mesurable et rapide",
-      "Accompagnement personnalisé",
-      "Expertise sectorielle hôtelière",
-      "Solutions clés en main"
-    ]
+    benefits: title === "Consulting"
+      ? [
+          "Croissance mesurable du chiffre d'affaires hébergement",
+          "Vision claire pour des décisions stratégiques efficaces",
+          "Réduction de la dépendance aux OTAs",
+          "Montée en compétence des équipes internes"
+        ]
+      : title === "Studio"
+      ? [
+          "Amélioration immédiate du taux de conversion",
+          "Cohérence de l'image de marque sur tous les canaux",
+          "Gain de temps et de qualité grâce à une production clé en main",
+          "Valorisation différenciante face à la concurrence locale"
+        ]
+      : [
+          "Integration fluide a l'èco-systeme hôtelière",
+          "Accompagnement personnalisé",
+          "Expertise sectorielle hôtelière",
+          "Solutions clés en main"
+        ]
   };
 
   useEffect(() => {
@@ -58,7 +72,9 @@ export function BusinessUnitCard({
   return (
     <>
       <div
-        className="h-full group business-unit-hover"
+        className={`h-full group business-unit-hover transition-all duration-300 ${isHovered ? 'border-2 border-[#105740] rounded-2xl shadow-lg' : 'border border-transparent rounded-2xl'}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <div
           className="h-full relative"
@@ -66,7 +82,11 @@ export function BusinessUnitCard({
         >
           {/* Neon morphing border (desktop only) */}
           <div className="hidden md:block absolute -inset-1 z-20 pointer-events-none">
-            <div className="w-full h-full rounded-3xl animate-glow border-4 border-transparent" style={{ boxShadow: isHovered ? '0 0 40px 10px #F2A541, 0 0 80px 20px #9EB7E5, 0 0 120px 30px #2A2A72' : 'none', transition: 'box-shadow 0.5s' }} />
+            <div className="w-full h-full rounded-3xl animate-glow border-4 border-transparent" style={{ 
+              boxShadow: isHovered ? '0 0 40px 10px rgba(16, 87, 64, 0.3), 0 0 80px 20px rgba(16, 87, 64, 0.2), 0 0 120px 30px rgba(16, 87, 64, 0.1)' : 'none',
+              transition: 'box-shadow 0.5s',
+              borderRadius: '24px'
+            }} />
           </div>
           {/* Glass morphing effect (desktop only) */}
           <div className="hidden md:block absolute inset-0 z-10 rounded-3xl glass-effect group-hover:backdrop-blur-strong transition-all duration-500" style={{ opacity: isHovered ? 0.95 : 0.85 }} />
