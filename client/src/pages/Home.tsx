@@ -23,7 +23,7 @@ export default function Home() {
       title: "Consulting",
       description: "Renforcez votre structure digitale avec des experts métiers qui comprennent les enjeux de l'hôtellerie.",
       features: [
-        "Pilotage de la stratiégie de distubution web",
+        "Pilotage de la stratégie de distribution web",
         "Audit & optimisation des performances",
         "Formation & sensibilisation digitale"
       ],
@@ -107,17 +107,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {/* Floating badge */}
-            <motion.div
-              className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-white/90"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <Sparkles size={16} />
-              <span className="text-sm font-medium">Solution 360° innovante</span>
-            </motion.div>
-
+            {/* Floating badge removed */}
             <motion.h1 
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight text-shadow"
               initial={{ opacity: 0, y: 30 }}
@@ -213,7 +203,7 @@ export default function Home() {
       </motion.section>
 
       {/* Business Units Overview */}
-      <section id="business-units" className="py-20 bg-neutral-light relative overflow-hidden">
+      <section id="business-units" className="py-12 bg-neutral-light relative overflow-hidden">
         {/* Background decorations */}
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"
@@ -233,7 +223,7 @@ export default function Home() {
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <AnimatedSection className="text-center mb-16" delay={0.1} duration={0.6}>
+          <AnimatedSection className="text-center mb-12" delay={0.1} duration={0.6}>
             <motion.div
               className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-6"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -261,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <AnimatedSection delay={0.2} className="py-20 bg-white">
+      <AnimatedSection delay={0.2} className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -300,7 +290,7 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Call to Action */}
-      <section className="py-20 gradient-bg relative overflow-hidden">
+      <section className="py-16 gradient-bg relative overflow-hidden">
         {/* Animated background elements */}
         <motion.div
           className="absolute inset-0 opacity-10"

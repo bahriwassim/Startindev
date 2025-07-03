@@ -53,7 +53,7 @@ export function BusinessUnitCard({
           "Valorisation différenciante face à la concurrence locale"
         ]
       : [
-          "Integration fluide a l'èco-systeme hôtelière",
+          "Intégration fluide à l'écosystème hôtelier",
           "Accompagnement personnalisé",
           "Expertise sectorielle hôtelière",
           "Solutions clés en main"

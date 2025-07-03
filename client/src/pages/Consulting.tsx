@@ -353,12 +353,12 @@ export default function Consulting() {
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <motion.img
                     src={`https://images.unsplash.com/photo-${
-                      index === 0 ? '1460925895917-afdab827c52f' : 
-                      index === 1 ? '1521737604893-d14cc237f11d' :
-                      index === 2 ? '1551288049-4c9b4d5fdde9' :
-                      index === 3 ? '1556742049-0c4b30e8c0b9' :
-                      index === 4 ? '1523240795612-9a054b0db644' :
-                      '1551434678-e076c223a692'
+                      index === 0 ? '1460925895917-afdab827c52f' : // Conseil stratégique
+                      index === 1 ? '1521737604893-d14cc237f11d' : // Renfort d'équipe
+                      index === 2 ? '1551288049-4c9b4d5fdde9' : // Audit OTA - analytics/performance
+                      index === 3 ? '1611162617474-5b21e879e113' : // Sponsoring & campagnes - marketing
+                      index === 4 ? '1523240795612-9a054b0db644' : // Formation
+                      '1551434678-e076c223a692' // Performance site
                     }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600`}
                     alt={service.title}
                     className="rounded-xl shadow-xl w-full"

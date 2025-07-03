@@ -256,10 +256,10 @@ export default function Tech() {
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <motion.img
                     src={`https://images.unsplash.com/photo-${
-                      index === 0 ? '1551434678-e076c223a692' : 
-                      index === 1 ? '1460925895917-afdab827c52f' :
-                      index === 2 ? '1556742049-0c4b30e8c0b9' :
-                      '1519389950473-47ba0277781c'
+                      index === 0 ? '1551434678-e076c223a692' : // Site vitrine
+                      index === 1 ? '1460925895917-afdab827c52f' : // Intégration PMS
+                      index === 2 ? '1556742049-0c4b30e8c0b9' : // Tunnel réservation - e-commerce
+                      '1519389950473-47ba0277781c' // Projets innovants
                     }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600`}
                     alt={service.title}
                     className="rounded-xl shadow-xl w-full"

@@ -268,7 +268,11 @@ export default function Contact() {
                         QR Code LinkedIn
                       </p>
                       <div className="w-24 h-24 bg-neutral-light rounded-lg shadow-md flex items-center justify-center">
-                        <QrCode className="text-neutral-medium" size={32} />
+                        <img 
+                          src="/assets/qr-code-linkedin.png" 
+                          alt="QR Code LinkedIn" 
+                          className="w-full h-full object-contain rounded-lg"
+                        />
                       </div>
                     </div>
                   </div>

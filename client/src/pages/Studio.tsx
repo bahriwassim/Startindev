@@ -382,14 +382,14 @@ export default function Studio() {
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <motion.img
                     src={`https://images.unsplash.com/photo-${
-                      index === 0 ? '1566073771259-6a8506099945' : 
-                      index === 1 ? '1571896349842-33c89424de2d' :
-                      index === 2 ? '1611224923853-80b023f02d71' :
-                      index === 3 ? '1558618047-0faa56f4961b' :
-                      index === 4 ? '1542744173-05336fcc7ad4' :
-                      index === 5 ? '1460925895917-afdab827c52f' :
-                      index === 6 ? '1507003211169-0a1dd7228f2d' :
-                      '1564013434775-cb8ba2d0948e'
+                      index === 0 ? '1566073771259-6a8506099945' : // Shooting photo
+                      index === 1 ? '1571896349842-33c89424de2d' : // Vidéos & drone
+                      index === 2 ? '1611224923853-80b023f02d71' : // Formats réseaux sociaux
+                      index === 3 ? '1558618047-0faa56f4961b' : // Direction artistique
+                      index === 4 ? '1542744173-05336fcc7ad4' : // Retouche & montage
+                      index === 5 ? '1460925895917-afdab827c52f' : // Intégration plateformes
+                      index === 6 ? '1507003211169-0a1dd7228f2d' : // Casting figurants
+                      '1564013434775-cb8ba2d0948e' // Espaces, chambres, services
                     }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600`}
                     alt={service.title}
                     className="rounded-xl shadow-xl w-full"
