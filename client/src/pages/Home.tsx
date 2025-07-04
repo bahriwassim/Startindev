@@ -64,7 +64,7 @@ export default function Home() {
       {/* Hero Section with Parallax */}
       <motion.section 
         ref={heroRef}
-        className="relative min-h-screen flex items-center overflow-hidden"
+        className="relative flex items-start py-32 sm:py-36 lg:py-40 overflow-hidden"
         style={{ y: heroY, opacity: heroOpacity }}
       >
         {/* Background with Parallax */}
