@@ -14,7 +14,7 @@ export function Layout({ children }: LayoutProps) {
     <div className="min-h-screen flex flex-col">
       <Header />
       <motion.main 
-        className="flex-1 pt-20 page-transition"
+        className="flex-1 pt-12 page-transition"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
