@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { BusinessUnitCard } from "@/components/BusinessUnitCard";
-import { ChartLine, Camera, Code, ChevronDown, Sparkles, Zap, Target } from "lucide-react";
+import { ArrowRight, ChevronDown, Sparkles, Zap, Target, LineChart, Camera, Cpu } from "lucide-react";
 import { useRef } from "react";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
 
   const businessUnits = [
     {
-      icon: <ChartLine className="text-primary" size={32} />,
+      icon: <LineChart className="text-[#2a2a72]" size={32} />,
       title: "Consulting",
       description: "Renforcez votre structure digitale avec des experts métiers qui comprennent les enjeux de l'hôtellerie.",
       features: [
@@ -28,11 +28,12 @@ export default function Home() {
         "Formation & sensibilisation digitale"
       ],
       href: "/consulting",
-      colorClass: "bg-primary/10",
+      colorClass: "bg-[#e9ecff]",
+      buttonClass: "bg-[#2a2a72] hover:bg-[#222261] text-white",
       delay: 0
     },
     {
-      icon: <Camera className="text-primary" size={32} />,
+      icon: <Camera className="text-[#F2A541]" size={32} />,
       title: "Studio",
       description: "Des visuels pensés pour générer de la réservation avec une direction artistique complète.",
       features: [
@@ -41,20 +42,22 @@ export default function Home() {
         "Direction & pilotage des projets audiovisuels"
       ],
       href: "/studio",
-      colorClass: "bg-primary/10",
+      colorClass: "bg-orange-50",
+      buttonClass: "bg-[#F2A541] hover:bg-[#bf3100] text-white",
       delay: 1
     },
     {
-      icon: <Code className="text-primary" size={32} />,
+      icon: <Cpu className="text-[#105740]" size={32} />,
       title: "Tech",
       description: "Des outils simples, activables, pensés spécifiquement pour l'industrie hôtelière.",
       features: [
         "Sites vitrine & conversion",
         "Intégration PMS / extranet",
-        " Solutions sur-mesure"
+        "Solutions sur-mesure"
       ],
       href: "/tech",
-      colorClass: "bg-primary/10",
+      colorClass: "bg-[#e6f4ef]",
+      buttonClass: "bg-[#105740] hover:bg-[#0c4633] text-white",
       delay: 2
     }
   ];
@@ -75,7 +78,7 @@ export default function Home() {
             scale: heroScale
           }}
         >
-          <div className="absolute inset-0" style={{ background: 'rgba(16, 87, 64, 0.92)' }}></div>
+          <div className="absolute inset-0" style={{ background: 'rgba(42, 42, 114, 0.92)' }}></div>
           
           {/* Animated particles */}
           {[...Array(5)].map((_, i) => (
@@ -167,19 +170,20 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-2 border-white/90 bg-white/10 text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-4 backdrop-blur-sm shadow-lg transition-all duration-300"
-                  onClick={() => document.getElementById('business-units')?.scrollIntoView({ behavior: 'smooth' })}
+              <Link href="/consulting">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  Découvrir nos services
-                </Button>
-              </motion.div>
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="border-2 border-white/90 bg-white/10 text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-4 backdrop-blur-sm shadow-lg transition-all duration-300"
+                  >
+                    Découvrir nos services
+                  </Button>
+                </motion.div>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -244,7 +248,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {businessUnits.map((unit, index) => (
-              <BusinessUnitCard key={unit.title} {...unit} delay={index} />
+              <BusinessUnitCard key={index} {...unit} delay={index} />
             ))}
           </div>
         </div>
@@ -258,7 +262,7 @@ export default function Home() {
               { number: "50+", label: "Projets réalisés", icon: Target },
               { number: "98%", label: "Satisfaction client", icon: Sparkles },
               { number: "24h", label: "Temps de réponse", icon: Zap },
-              { number: "360°", label: "Approche complète", icon: ChartLine }
+              { number: "360°", label: "Approche complète", icon: LineChart }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

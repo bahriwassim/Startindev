@@ -96,7 +96,7 @@ export default function Studio() {
       icon: <Video className="text-secondary" size={24} />,
       title: "Vidéos immersives & drone",
       description: "Contenu dynamique et formats courts",
-      color: "from-[#2A2A72] to-[#105740]",
+      color: "from-[#2A2A72] to-[#2a2a72]",
       details: [
         "Vidéos de présentation immersives de l'établissement",
         "Prises de vues aériennes par drone certifié",
@@ -124,7 +124,7 @@ export default function Studio() {
       icon: <Palette className="text-secondary" size={24} />,
       title: "Direction artistique",
       description: "Vision créative cohérente pour votre marque",
-      color: "from-[#105740] to-[#F2A541]",
+      color: "from-[#2a2a72] to-[#F2A541]",
       details: [
         "Développement d'une identité visuelle cohérente",
         "Création d'un univers graphique sur mesure",
@@ -166,7 +166,7 @@ export default function Studio() {
       icon: <Users className="text-secondary" size={24} />,
       title: "Casting figurants",
       description: "Sélection de modèles pour vos visuels",
-      color: "from-[#9EB7E5] to-[#105740]",
+      color: "from-[#9EB7E5] to-[#2a2a72]",
       details: [
         "Sélection de modèles adaptés à votre clientèle cible",
         "Casting local et professionnel",

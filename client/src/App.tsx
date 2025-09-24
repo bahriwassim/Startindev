@@ -14,6 +14,9 @@ import Tech from "@/pages/Tech";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 import EspaceCompte from "@/pages/EspaceCompte";
+import Entertainment from "@/pages/Entertainment";
+import EventMasterPro from "@/pages/entertainment/EventMasterPro";
+import EventsPlatform from "@/pages/entertainment/EventsPlatform";
 import NotFound from "@/pages/not-found";
 
 const pageTransition = {
@@ -70,6 +73,9 @@ function Router() {
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
             <Route path="/espace-compte" component={EspaceCompte} />
+            <Route path="/entertainment" component={Entertainment} />
+            <Route path="/entertainment/eventmasterpro" component={EventMasterPro} />
+            <Route path="/entertainment/eventsplatform" component={EventsPlatform} />
             <Route component={NotFound} />
           </Switch>
         </motion.div>

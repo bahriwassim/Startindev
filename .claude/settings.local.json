@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/startindev2.0-main/startindev2.0-main/client/src/components/**)",
+      "Read(//d/startindev2.0-main/startindev2.0-main/**)",
+      "Read(//d//**)",
+      "Bash(cat:*)",
+      "Bash(npm run build:*)",
+      "Bash(cp:*)",
+      "Bash(sed:*)",
+      "Bash(npm start)",
+      "Bash(pkill:*)",
+      "Bash(python3:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

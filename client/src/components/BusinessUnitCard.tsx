@@ -9,11 +9,12 @@ import { ServiceModal } from "./Modal";
 
 interface BusinessUnitCardProps {
   icon: React.ReactNode;
-  title: string;
-  description: string;
+  title: React.ReactNode;
+  description: React.ReactNode;
   features: string[];
   href: string;
   colorClass: string;
+  buttonClass?: string;
   delay: number;
 }
 
@@ -24,6 +25,7 @@ export function BusinessUnitCard({
   features,
   href,
   colorClass,
+  buttonClass,
   delay
 }: BusinessUnitCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,11 +36,35 @@ export function BusinessUnitCard({
     description: description + " Notre expertise vous permettra d'optimiser vos performances et d'atteindre vos objectifs avec des solutions sur mesure.",
     features,
     image: `https://images.unsplash.com/photo-${
+      (typeof title === 'object' && title?.props?.children === "E-Business") ? "1460925895917-afdab827c52f" :
+      (typeof title === 'object' && title?.props?.children === "Entertainment") ? "1506157786151-b8491531f063" :
+      (typeof title === 'object' && title?.props?.children === "Hospitality") ? "1566073771259-6a8506099945" :
       title === "Consulting" ? "1552664730-d307ca884978" :
       title === "Studio" ? "1606857521015-7f9fcf423740" :
       "1498050108023-c5249f4df085"
     }?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400`,
-    benefits: title === "Consulting"
+    benefits: (typeof title === 'object' && title?.props?.children === "E-Business")
+      ? [
+          "Augmentation des ventes en ligne",
+          "Optimisation des conversions",
+          "Intégration e-commerce fluide",
+          "Stratégies digitales personnalisées"
+        ]
+      : (typeof title === 'object' && title?.props?.children === "Entertainment")
+      ? [
+          "Contenu engageant et interactif",
+          "Expériences utilisateur immersives",
+          "Animation digitale créative",
+          "Stratégies de divertissement efficaces"
+        ]
+      : (typeof title === 'object' && title?.props?.children === "Hospitality")
+      ? [
+          "Systèmes de réservation optimisés",
+          "Gestion hôtelière simplifiée",
+          "Expérience client digitale",
+          "Solutions spécialisées hôtellerie"
+        ]
+      : title === "Consulting"
       ? [
           "Croissance mesurable du chiffre d'affaires hébergement",
           "Vision claire pour des décisions stratégiques efficaces",
@@ -72,7 +98,7 @@ export function BusinessUnitCard({
   return (
     <>
       <div
-        className={`h-full group business-unit-hover transition-all duration-300 ${isHovered ? 'border-2 border-[#105740] rounded-2xl shadow-lg' : 'border border-transparent rounded-2xl'}`}
+        className={`h-full group business-unit-hover transition-all duration-300 ${isHovered ? 'border-2 border-[#2a2a72] rounded-2xl shadow-lg' : 'border border-transparent rounded-2xl'}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -134,7 +160,7 @@ export function BusinessUnitCard({
             </motion.div>
 
             {/* Title with gradient text effect */}
-            <motion.h3 
+            <motion.h3
               className="text-2xl font-bold text-neutral-dark mb-4 group-hover:gradient-text transition-all duration-300"
               whileHover={{ scale: 1.02 }}
             >
@@ -142,8 +168,8 @@ export function BusinessUnitCard({
             </motion.h3>
 
             {/* Description */}
-            <motion.p 
-              className="text-neutral-medium mb-6 leading-relaxed flex-grow"
+            <motion.p
+              className="text-black mb-6 leading-relaxed flex-grow"
               initial={{ opacity: 0.8 }}
               whileHover={{ opacity: 1 }}
             >
@@ -155,10 +181,10 @@ export function BusinessUnitCard({
               {features.map((feature, index) => (
                 <motion.li
                   key={index}
-                  className="flex items-center text-sm text-neutral-medium"
+                  className="flex items-center text-sm text-black"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ 
+                  transition={{
                     delay: delay * 0.05 + index * 0.05,
                     duration: 0.3
                   }}
@@ -182,7 +208,7 @@ export function BusinessUnitCard({
                   className="w-full"
                 >
                   <Button 
-                    className="w-full bg-primary hover:bg-[#e08a00] hover:shadow-lg text-white font-medium group/btn relative overflow-hidden transition-all duration-200"
+                    className={`w-full ${buttonClass || 'bg-primary hover:bg-[#e08a00]'} hover:shadow-lg text-white font-medium group/btn relative overflow-hidden transition-all duration-200`}
                   >
                     <motion.span
                       className="relative z-10 flex items-center justify-center"
@@ -201,12 +227,12 @@ export function BusinessUnitCard({
               </Link>
 
               <motion.div
-                whileHover={{ scale: 1.04, boxShadow: '0 8px 32px #10574033' }}
+                whileHover={{ scale: 1.04, boxShadow: '0 8px 32px #2a2a7233' }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Button 
                   variant="outline" 
-                  className="w-full group/info hover:border-primary hover:text-white hover:bg-[#105740] hover:shadow-lg transition-all duration-200"
+                  className="w-full group/info hover:border-primary hover:text-white hover:bg-[#2a2a72] hover:shadow-lg transition-all duration-200"
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();

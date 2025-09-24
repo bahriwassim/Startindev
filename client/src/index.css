@@ -4,18 +4,18 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #105740;
+  --foreground: #2a2a72;
   --muted: #9EB7E5;
   --muted-foreground: #2A2A72;
   --popover: #ffffff;
-  --popover-foreground: #105740;
+  --popover-foreground: #2a2a72;
   --card: #ffffff;
-  --card-foreground: #105740;
+  --card-foreground: #2a2a72;
   --border: #9EB7E5;
   --input: #9EB7E5;
   --primary: #F2A541;
-  --primary-foreground: #105740;
-  --secondary: #105740;
+  --primary-foreground: #2a2a72;
+  --secondary: #2a2a72;
   --secondary-foreground: #F2A541;
   --accent: #9EB7E5;
   --accent-foreground: #2A2A72;
@@ -26,7 +26,7 @@
   
   /* Custom colors for Start In Dev Group - Updated to match logo */
   --primary-orange: #F2A541;
-  --accent-green: #105740;
+  --accent-green: #2a2a72;
   --neutral-dark: #2A2A72;
   --neutral-medium: #9EB7E5;
   --neutral-light: #ffffff;
@@ -35,17 +35,17 @@
 .dark {
   --background: #2A2A72;
   --foreground: #F2A541;
-  --muted: #105740;
+  --muted: #2a2a72;
   --muted-foreground: #9EB7E5;
   --popover: #2A2A72;
   --popover-foreground: #F2A541;
   --card: #2A2A72;
   --card-foreground: #F2A541;
-  --border: #105740;
-  --input: #105740;
+  --border: #2a2a72;
+  --input: #2a2a72;
   --primary: #F2A541;
   --primary-foreground: #2A2A72;
-  --secondary: #105740;
+  --secondary: #2a2a72;
   --secondary-foreground: #F2A541;
   --accent: #9EB7E5;
   --accent-foreground: #2A2A72;
@@ -78,18 +78,18 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #105740 !important;
+    background: #2a2a72 !important;
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #0d4633 !important;
+    background: #252560 !important;
   }
 }
 
 @layer components {
   .gradient-bg { background: #F2A541 !important; }
-  .gradient-green { background: #105740 !important; }
+  .gradient-green { background: #2a2a72 !important; }
   .brand-gradient { background: #F2A541 !important; }
   
   .glass-effect {
@@ -109,7 +109,7 @@
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #F2A541, #105740, #9EB7E5, #2A2A72);
+    background: linear-gradient(135deg, #F2A541, #2a2a72, #9EB7E5, #2A2A72);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -345,7 +345,7 @@
     position: absolute;
     inset: 0;
     padding: 2px;
-    background: linear-gradient(45deg, #F2A541, #105740, #9EB7E5, #2A2A72);
+    background: linear-gradient(45deg, #F2A541, #2a2a72, #9EB7E5, #2A2A72);
     border-radius: inherit;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: subtract;
@@ -407,9 +407,9 @@
 
   /* Hover custom pour les cartes d'expertise */
   .business-unit-hover:hover {
-    box-shadow: 0 8px 32px 0 #10574033, 0 1.5px 12px 0 #10574022;
+    box-shadow: 0 8px 32px 0 #2a2a7233, 0 1.5px 12px 0 #2a2a7222;
     background: #f6fbf9;
-    border: 2px solid #105740;
+    border: 2px solid #2a2a72;
     transform: translateY(-8px) scale(1.02);
     transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
   }

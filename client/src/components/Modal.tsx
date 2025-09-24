@@ -92,7 +92,7 @@ export function Modal({
             {(title || showCloseButton) && (
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
                 {title && (
-                  <h2 className="text-2xl font-bold text-neutral-dark">{title}</h2>
+                  <h2 className="text-2xl font-bold text-black">{title}</h2>
                 )}
                 {showCloseButton && (
                   <motion.button
@@ -158,7 +158,7 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
         />
         
         <motion.p
-          className="text-lg text-neutral-medium leading-relaxed"
+          className="text-lg text-black leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -172,12 +172,12 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <h4 className="text-xl font-semibold text-neutral-dark mb-4">Fonctionnalités</h4>
+            <h4 className="text-xl font-semibold text-black mb-4">Fonctionnalités</h4>
             <ul className="space-y-2">
               {service.features.map((feature, index) => (
                 <motion.li
                   key={index}
-                  className="flex items-center text-neutral-medium"
+                  className="flex items-center text-black"
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.4 + index * 0.1 }}
@@ -194,12 +194,12 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <h4 className="text-xl font-semibold text-neutral-dark mb-4">Bénéfices</h4>
+            <h4 className="text-xl font-semibold text-black mb-4">Bénéfices</h4>
             <ul className="space-y-2">
               {service.benefits.map((benefit, index) => (
                 <motion.li
                   key={index}
-                  className="flex items-center text-neutral-medium"
+                  className="flex items-center text-black"
                   initial={{ opacity: 0, x: 10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.4 + index * 0.1 }}
@@ -226,7 +226,7 @@ export function ServiceModal({ isOpen, onClose, service }: ServiceModalProps) {
           </Button>
           <Button
             variant="outline"
-            className="flex-1 border-primary text-primary hover:bg-[#105740] hover:text-white transition-colors duration-200"
+            className="flex-1 border-primary text-primary hover:bg-[#2a2a72] hover:text-white transition-colors duration-200"
             onClick={handleDemanderDevis}
           >
             Demander un devis

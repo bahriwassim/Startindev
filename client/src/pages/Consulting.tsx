@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { useRef, useState } from "react";
 import { 
-  ChartLine, 
+  LineChart, 
   Lightbulb, 
   Handshake, 
   BarChart3, 
@@ -96,7 +96,7 @@ export default function Consulting() {
       icon: <Handshake className="text-primary" size={24} />,
       title: "Renfort d'équipe et accompagnement sur site",
       description: "Intervention directe au sein de vos équipes",
-      color: "from-[#105740] to-[#9EB7E5]",
+      color: "from-[#2a2a72] to-[#9EB7E5]",
       details: [
         "Consultants spécialisés intégrés à vos équipes",
         "Formation en situation réelle",
@@ -152,7 +152,7 @@ export default function Consulting() {
       icon: <Target className="text-primary" size={24} />,
       title: "Performance du site direct",
       description: "Optimisation de la conversion et du référencement",
-      color: "from-[#105740] to-[#BF3100]",
+      color: "from-[#2a2a72] to-[#BF3100]",
       details: [
         "Audit UX/UI et optimisation de l'expérience utilisateur",
         "Stratégie SEO pour améliorer la visibilité",
@@ -267,7 +267,7 @@ export default function Consulting() {
               className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-6"
               variants={itemVariants}
             >
-              <ChartLine size={16} />
+              <LineChart size={16} />
               <span className="text-sm font-medium">Expertise stratégique</span>
             </motion.div>
 

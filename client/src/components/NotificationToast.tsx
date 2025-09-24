@@ -19,7 +19,7 @@ const notificationIcons = {
 };
 
 const notificationColors = {
-  success: "from-green-500 to-emerald-600",
+  success: "from-[#2a2a72] to-[#1a1a52]",
   error: "from-red-500 to-rose-600", 
   warning: "from-yellow-500 to-orange-600",
   info: "from-blue-500 to-indigo-600"
